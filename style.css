@@ -108,3 +108,39 @@ button:hover {
     transform: translateY(-3px);
     box-shadow: 0px 10px 20px rgba(255, 0, 0, 0.3);
 }
+
+/* RESPONSIVE FIX for screens <= 750px */
+@media (max-width: 750px) {
+
+    .wrapper {
+        flex-direction: column;
+        height: auto;
+        width: 95%;
+    }
+
+    .left-panel {
+        width: 100%;
+        padding: 35px 25px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .small-card {
+        justify-content: center;
+    }
+
+    .form-panel {
+        width: 100%;
+        padding: 35px 25px;
+    }
+
+    .two-field {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    form input {
+        font-size: 14px;
+    }
+}
+
